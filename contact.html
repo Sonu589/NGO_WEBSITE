@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Contact Page</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+	<script>
+	    function popup(){
+		    swal({
+                    title: "Thank You!",
+                    text: "You Response Has Been Recorded!",
+                    icon: "success",
+                    button: "Ok",
+                });
+		}
+	</script>
+	    <!-- header starts -->
+  <header class="header">
+    <div class="container-box">
+      <div class="row align-items-center justify-content-between">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" style="height: 50px;">
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html"><i class="material-icons">home</i>&nbsp home</a></li>
+            <li><a href="index.html#about"><i class="material-icons">add_alert</i>&nbsp about</a></li>
+            <li><a href="donation now.html"><i class="material-icons cart-icon">add_shopping_cart</i>&nbsp Donate Now</a></li>
+			<li><a href="login or signup.html"><i class="material-icons">login</i>&nbsp Login/SignUp</a></li>
+			<li><a href="contact.html"><i class="material-icons">contact_mail</i>&nbsp contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header ends -->
+  
+    <!-- Contact Form Start -->
+    
+	    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>xyz street, sector-12, New Delhi - 000 ****</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>WWW.Chitkara.edu.in</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>09501105714</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.in">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+          </form>
+		    <input type="submit" value="Submit" onclick="popup()" class="btn">
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form End -->
+	    
+    <script src="js/app.js"></script>
+  </body>
+</html>
